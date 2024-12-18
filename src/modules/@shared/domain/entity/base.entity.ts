@@ -1,9 +1,9 @@
 import Id from "../value-object/id.value-object";
 
 export default class BaseEntity {
-  private _id: Id;
-  private _createdAt: Date;
-  private _updatedAt: Date;
+  protected _id: Id;
+  protected _createdAt: Date;
+  protected _updatedAt: Date;
 
   constructor(id?: Id, createdAt?: Date, updatedAt?: Date) {
     this._id = id || new Id();
